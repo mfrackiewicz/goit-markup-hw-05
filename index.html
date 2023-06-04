@@ -25,7 +25,11 @@
           </section>
           <nav>
             <ul class="menu-links">
-              <li><a class="menu-links-item" href="#">Agencja</a></li>
+              <li>
+                <a class="menu-links-item is-active" href="./index.html"
+                  >Agencja
+                </a>
+              </li>
               <li>
                 <a class="menu-links-item" href="./portfolio.html">Portfolio</a>
               </li>
@@ -62,7 +66,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="hero-button" type="button">Zamów usługe</button>
+          <button data-modal-open type="button" class="hero-button">
+            Zamów usługe
+          </button>
         </div>
       </section>
       <section class="advantages">
@@ -130,6 +136,7 @@
                 width="370"
                 height="294"
               />
+              <p class="label">Aplikacje komputerowe</p>
             </li>
             <li class="experience-item">
               <img
@@ -138,6 +145,7 @@
                 width="370"
                 height="294"
               />
+              <p class="label">Aplikacje mobilne</p>
             </li>
             <li class="experience-item">
               <img
@@ -146,6 +154,7 @@
                 width="370"
                 height="294"
               />
+              <p class="label">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
@@ -444,5 +453,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
